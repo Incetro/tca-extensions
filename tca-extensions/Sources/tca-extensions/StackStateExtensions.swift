@@ -1,5 +1,5 @@
 //
-//  StackStateExtensions.swift
+//  StackState + Extensions.swift
 //  tca-extensions
 //
 //  Created by Andrey Barsukov on 01.06.2025.
@@ -10,7 +10,7 @@ import ComposableArchitecture
 // MARK: - SearchDirection
 
 /// Defines the direction used when searching within a stack-like collection.
-public enum SearchDirection {
+internal enum SearchDirection {
     
     // MARK: - Cases
 
@@ -21,7 +21,7 @@ public enum SearchDirection {
     case fromLast
 }
 
-// MARK: - StackState+Useful
+// MARK: - StackState + Useful
 
 /// Provides utility methods for accessing the first or last occurrence of a specific
 /// case within a `StackState` whose elements conform to `CasePathable`.
